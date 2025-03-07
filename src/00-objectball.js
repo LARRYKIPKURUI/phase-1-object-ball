@@ -1,4 +1,4 @@
-
+//create the Object and feed data 
 function gameObject(){
     let obj = {
         home:{
@@ -129,16 +129,5 @@ function gameObject(){
     return obj
 }
 
-console.log(gameObject());
+//Function Building
 
-
-function getPlayerNumber(name){
-    let object = gameObject();
-    if(object.home.players[name]){
-        return object.home.players[name].number
-    } else if(object.away.players[name]) {
-        return object.away.players[name].number
-    } else {
-        return "Not this player!"
-    }
-}
